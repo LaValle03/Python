@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <h1 align="center">CALCOLO INTEGRALI</h1>
+      <form method="post">
+        <div class="row">
+          <input type="text" placeholder="Integrale" name="integrale" value="{{
+            request.form.integrale }}">
+          <input type="text" placeholder="Estremo 1" name="estremo1" value="{{
+            request.form.estremo1 }}">
+          <input type="text" placeholder="Estremo 2" name="estremo2" value="{{
+            request.form.estremo2 }}">
+        </div>
+        <div class="row" align="center">
+          <input class="btn btn-primary btn-group-justified" type="submit" value="Calcola">
+        </div>
+        
+      </form>
+    </div>
+  </body>
+</html>
